@@ -1,11 +1,9 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
 import {
-  BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route 
 } from "react-router-dom";
 
 import Navbar from './Navbar';
@@ -13,8 +11,6 @@ import Textarea from './Textarea';
 import About from './About';
 import { useState } from 'react';
 import Alert from './SmallComponents/Alert';
-import { BrowserRouter } from "react-router-dom";
-
 function App() {
   const [mode,setmode]=useState("light");
   const [alert,setalert]=useState(null);
@@ -50,10 +46,9 @@ function App() {
 
       <Navbar title="textutils" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert}/>
-      
       <Routes>
-      <Route path="/about" element={<About />}/>
-      <Route path="/textarea" element={<Textarea mode={mode} showalert={showalert} setalert={setalert} />} />     s
+        <Route path="/about" element={<About />}/>
+        <Route path="/textarea" element={<Textarea mode={mode} showalert={showalert} setalert={setalert} />} />     s
       </Routes>     
       
     </div>

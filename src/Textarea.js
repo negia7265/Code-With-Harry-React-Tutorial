@@ -54,8 +54,8 @@ export default function Textarea(props) {
     <>
   <div className=' container wid-25' style={textareastyle} >
     <div className="form-group my-4 ">
-      <label for="exampleFormControlTextarea1">Example textarea</label>
-      <textarea  style={textareastyle} className="form-control my-2" rows="50" value={text} onChange={handlechange} id="exampleFormControlTextarea1" rows="3"></textarea>
+      <label htmlFor="exampleFormControlTextarea1">Example textarea</label>
+      <textarea  style={textareastyle} className="form-control my-2" rows="50" value={text} onChange={handlechange} id="exampleFormControlTextarea1" ></textarea>
     </div>
   </div>
     <div className='container wid-25'>
