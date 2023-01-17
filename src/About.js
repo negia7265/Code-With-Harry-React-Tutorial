@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div class="container">
+    <div className="container">
         <p>
   <a className="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
     Link with href
