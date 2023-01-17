@@ -17,15 +17,13 @@ export default function Switch({ onStyleChange }) {
         color:'dark',
         backgroundColor:'white'
       });
+     }
     }
-  }
-
   return (
     <div>
       <div className="form-check form-switch container">
         <input className="form-check-input" onChange={doaction} type="checkbox" role="switch" id="flexSwitchCheckDefault"/>
         <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{text}</label>
       </div>
-    </div>
-  )
-}
+    </div>)
+  }
